@@ -295,8 +295,74 @@
       </div>
     </section>
 
+    <section class="section-contact">
+      <div class="row">
+        <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
+      </div>
+      <div class="row">
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" required />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Your Email" required />
+
+          <label for="find-us">How did you find us?</label>
+          <select name="find-us" id="find-us">
+            <option value="friends" selected>Friends</option>
+            <option value="search_engine">Search Engines</option>
+            <option value="ad">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="newsletter">Newsletter?</label>
+          <div class="contact-checkbox">
+            <input type="checkbox" name="newsletter" id="newsletter" checked />
+            <label for="newsletter">Yes, please</label>
+          </div>
+          <label for="message">Drop us a line</label>
+          <textarea name="message" id="message" placeholder="Your Message"></textarea>
+
+          <input type="submit" value="Send it!" />
+        </form>
+      </div>
+    </section>
+
     <footer>
-      <span>Footer</span>
+      <div class="row footer-navbar">
+        <div class="footer-main-nav">
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-nav">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook icon-small"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter icon-small"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus icon-small"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram icon-small"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-bottom-info">
+        <p>
+          Copyright &copy; 2020 by Omnifood. All rights reserved.
+        </p>
+        <br />
+        <p>Build with <i class="fa fa-heart"></i> in the beautiful city of Tehran, Iran, Jul 2020.</p>
+      </div>
     </footer>
   </body>
 </html>
