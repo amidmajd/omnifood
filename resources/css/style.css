@@ -1,12 +1,11 @@
 /*
 Orange : #e67e22
-
+Black : #2e2e2e
 */
 
 /*----------------------------------------------*/
 /* BASIC SETUP */
 /*----------------------------------------------*/
-
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +30,6 @@ body {
 /*----------------------------------------------*/
 /* REUSEABLE COMPONENTS */
 /*----------------------------------------------*/
-
 .row {
   margin: 0 auto;
   max-width: 1140px;
@@ -112,19 +110,41 @@ h3 {
   margin-bottom: 15px;
 }
 
+/*-------- LINKS --------*/
+a,
+a:active {
+  color: #e67e22;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #2e2e2e;
+  border-bottom: 1px solid transparent !important;
+}
+
 /*-------- PARAGRAPHS --------*/
 .header-detail {
   line-height: 1.45em;
   width: 70%;
-  margin-left: 15%;
+  margin: 0 0 20px 15%;
 }
 
 /*-------- ICONS --------*/
-.icon-big {
+.icon-big,
+.icon-small {
   display: block;
+  text-align: center;
+  color: #e67e22;
+}
+
+.icon-big {
   font-size: 2.3em;
-  margin: 20px 0;
-  color: #e67e22 !important;
+  margin-bottom: 20px;
+}
+
+.icon-small {
+  font-size: 1em;
 }
 
 /*-------- BUTTONS --------*/
@@ -167,7 +187,6 @@ h3 {
 /*----------------------------------------------*/
 /* HEADER */
 /*----------------------------------------------*/
-
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
   background-size: cover;
@@ -228,7 +247,6 @@ header {
 /*----------------------------------------------*/
 /* FOOTER */
 /*----------------------------------------------*/
-
 footer {
   font-size: 25px;
   text-align: center;
@@ -237,12 +255,12 @@ footer {
 /*----------------------------------------------*/
 /*  FAVOURITE MEALS */
 /*----------------------------------------------*/
-
 .section-fav-meal {
   width: 100wh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0;
+  padding: 0;
 }
 
 .section-fav-meal figure {
@@ -267,7 +285,6 @@ footer {
 /*----------------------------------------------*/
 /*  HOW IT WORKS */
 /*----------------------------------------------*/
-
 .section-steps {
   background-color: #f4f4f4;
   background-size: cover;
@@ -277,7 +294,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1;
-  grid-column-gap: 0em;
   grid-column-gap: 3.5em;
 }
 
@@ -315,6 +331,48 @@ footer {
 
 .app-btn img:first-child {
   margin-right: 8px;
+}
+
+/*----------------------------------------------*/
+/*  Cities */
+/*----------------------------------------------*/
+.city-box .col {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 0.3em;
+}
+
+.city-box .col img {
+  width: 100%;
+  height: auto;
+  grid-column: 1/11;
+  margin-bottom: 20px;
+}
+
+.city-box .col h3 {
+  grid-column: 1/11;
+}
+
+.city-box .col i,
+.city-box .col span,
+.city-box .col div {
+  margin-left: 10px;
+  line-height: 1.5em;
+}
+
+.city-box .col i {
+  grid-column: 1/2;
+  margin-top: 2px;
+}
+
+.city-box .col span,
+.city-box .col div {
+  grid-column: 2/11;
+}
+
+.city-box .col a {
+  display: inline-block;
+  border-bottom: 1px solid #e67e22;
 }
 
 /*----------------------------------------------*/
