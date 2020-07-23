@@ -34,7 +34,6 @@ body {
 
 .row {
   margin: 0 auto;
-  margin-bottom: 20px;
   max-width: 1140px;
 }
 
@@ -57,6 +56,18 @@ body {
 
 section {
   padding: 80px 0;
+}
+
+.circle-number {
+  display: inline-block;
+  padding: 5px;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5em;
 }
 
 /*-------- HEADINGS --------*/
@@ -254,7 +265,7 @@ footer {
 }
 
 /*----------------------------------------------*/
-/*  FAVOURITE MEALS */
+/*  HOW IT WORKS */
 /*----------------------------------------------*/
 
 .section-steps {
@@ -266,20 +277,44 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1;
-  grid-gap: 0px;
-  justify-items: stretch;
-  padding: 0 10%;
+  grid-column-gap: 0em;
+  grid-column-gap: 3.5em;
 }
 
 .steps-grid img {
-  width: 200px;
+  width: 40%;
   height: auto;
   justify-self: end;
-  border: 1px solid black;
 }
 
 .steps {
-  border: 1px solid black;
+  justify-self: start;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  align-items: center;
+  grid-column-gap: 1em;
+}
+
+.steps .circle-number {
+  grid-column: 1/2;
+}
+
+.steps p {
+  grid-column: 2/10;
+}
+
+.app-btn {
+  grid-column: 1/7;
+  margin-top: 40px;
+}
+
+.app-btn img {
+  height: 50px;
+  width: auto;
+}
+
+.app-btn img:first-child {
+  margin-right: 8px;
 }
 
 /*----------------------------------------------*/
