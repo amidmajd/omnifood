@@ -607,6 +607,14 @@ footer i {
   padding: 10px;
 }
 
+.footer-navbar a:first-child {
+  padding-left: 0;
+}
+
+.footer-navbar a:nth-last-child() {
+  padding-right: 0;
+}
+
 .footer-navbar a:hover,
 .footer-navbar a:active {
   color: #ddd;
