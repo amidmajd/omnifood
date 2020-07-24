@@ -1,0 +1,190 @@
+/*-------------------------------------------------------------------------------*/
+/* BIG TABLETS TO WIDTH SMALLER THAN 1140px ==> from 1024px to 1200px width */
+/*-------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    position: absolute;
+    padding: 0 2%;
+    width: 100%;
+  }
+
+  .row {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
+
+/*-------------------------------------------------------------------------------*/
+/* SMALL TABLETS to BIG TABLETS ==> from 768px to 1023px width */
+/*-------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 17px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .steps {
+    font-size: 0.95em;
+    grid-row-gap: 5%;
+    padding-bottom: 10%;
+  }
+
+  .steps-grid > img {
+    width: 45%;
+  }
+
+  .circle-number {
+    padding-top: 25%;
+  }
+
+  .header-detail {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .app-btn {
+    grid-column: 1/10;
+  }
+
+  .app-btn img {
+    height: 40px;
+    width: auto;
+  }
+
+  .city-box .col span,
+  .city-box .col div {
+    font-size: 90%;
+  }
+
+  .plan-price {
+    font-size: 2.5em;
+  }
+
+  .plan-option-box {
+    font-size: 0.86em;
+  }
+}
+
+/*-------------------------------------------------------------------------------*/
+/* SMALL PHONES to SMALL TABLETS ==> from 481px to 767px width */
+/*-------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .row,
+  .hero-text-box {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .row-flex {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    font-size: 0.8em;
+    padding: 8px 8px;
+  }
+
+  .circle-number {
+    padding: 6px;
+    height: 40px;
+    width: 40px;
+    font-size: 1.3em;
+  }
+
+  .header-detail {
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+
+  .steps-grid > img {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .steps {
+    margin: 0 auto;
+  }
+
+  .app-btn {
+    grid-column: 1/10;
+    margin: 20px auto;
+    margin-bottom: 0;
+  }
+
+  .plan-box {
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+    padding: 0 10%;
+    max-width: 400px;
+  }
+
+  .contact-form {
+    width: 85%;
+  }
+
+  footer {
+    padding: 30px 0;
+  }
+
+  .footer-navbar a {
+    padding: 5px;
+  }
+}
+
+/*-------------------------------------------------------------------------------*/
+/* MAIN NAVBAR from 0 to 590px width */
+/*-------------------------------------------------------------------------------*/
+@media only screen and (max-width: 590px) {
+  .main-nav {
+    display: none;
+  }
+}
+
+/*-------------------------------------------------------------------------------*/
+/* SMALL PHONES ==> from 0 to 480px width */
+/*-------------------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .footer-navbar a,
+  .footer-navbar i {
+    font-size: 0.8em;
+  }
+
+  .footer-navbar a {
+    padding: 2px;
+  }
+}

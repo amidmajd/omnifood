@@ -54,9 +54,6 @@ body {
   justify-content: center;
 }
 
-.col {
-}
-
 .box {
   padding: 1%;
   color: #555;
@@ -265,7 +262,7 @@ header {
 }
 
 /*----------------------------------------------*/
-/*  FAVOURITE MEALS */
+/*  FAVORITE MEALS */
 /*----------------------------------------------*/
 .section-fav-meal {
   width: 100wh;
@@ -309,7 +306,7 @@ header {
   grid-column-gap: 3.5em;
 }
 
-.steps-grid img {
+.steps-grid > img {
   width: 40%;
   height: auto;
   justify-self: end;
@@ -321,6 +318,7 @@ header {
   grid-template-columns: repeat(9, 1fr);
   align-items: center;
   grid-column-gap: 1em;
+  line-height: 1.4em;
 }
 
 .steps .circle-number {
@@ -368,7 +366,6 @@ header {
 .city-box .col i,
 .city-box .col span,
 .city-box .col div {
-  margin-left: 10px;
   line-height: 1.5em;
 }
 
@@ -453,7 +450,7 @@ cite img {
   background-color: #fff;
   border-radius: 5px;
   display: grid;
-  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-rows: 1fr auto auto;
   grid-gap: 0;
   box-shadow: 1px 2px 2px rgb(228, 228, 228);
   transition: all 0.1s ease;
@@ -633,7 +630,3 @@ footer i {
 .footer-navbar a:hover .fa-instagram {
   color: #e4405f;
 }
-
-/*----------------------------------------------*/
-/* MEDIA QUERIES */
-/*----------------------------------------------*/
