@@ -153,8 +153,16 @@
     padding: 30px 0;
   }
 
-  .footer-navbar a {
+  /* .footer-navbar a {
     padding: 5px;
+  } */
+  .footer-navbar {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .footer-main-nav {
+    margin-bottom: 20px;
   }
 }
 
@@ -177,14 +185,5 @@
 
   .contact-form {
     width: 100%;
-  }
-
-  .footer-navbar a,
-  .footer-navbar i {
-    font-size: 0.8em;
-  }
-
-  .footer-navbar a {
-    padding: 2px;
   }
 }

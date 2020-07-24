@@ -32,11 +32,12 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-::selection {
+::-moz-selection {
   color: #fff;
   background: #e67e22;
 }
-::-moz-selection {
+
+::selection {
   color: #fff;
   background: #e67e22;
 }
