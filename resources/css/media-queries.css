@@ -96,7 +96,10 @@
 
   .row-flex {
     flex-direction: column;
-    gap: 40px;
+  }
+
+  .row-flex div {
+    padding-bottom: 30px;
   }
 
   .main-nav li a:link,
@@ -190,8 +193,11 @@
   .main-nav {
     display: none;
     flex-direction: column;
-    gap: 10px;
     padding: 2% 0;
+  }
+
+  .main-nav li {
+    padding: 5px 0;
   }
 }
 
