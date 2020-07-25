@@ -328,27 +328,13 @@ header {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0;
   padding: 0;
+  border-radius: 7px;
+  overflow: hidden;
 }
 
 .section-fav-meal figure {
   overflow: hidden;
   background-color: #000;
-}
-
-.section-fav-meal figure:nth-child(1) {
-  border-radius: 7px 0 0 0;
-}
-
-.section-fav-meal figure:nth-child(4) {
-  border-radius: 0 7px 0 0;
-}
-
-.section-fav-meal figure:nth-child(5) {
-  border-radius: 0 0 0 7px;
-}
-
-.section-fav-meal figure:nth-child(8) {
-  border-radius: 0 0 7px 0;
 }
 
 .section-fav-meal img {
@@ -527,7 +513,7 @@ cite img {
   display: grid;
   grid-template-rows: 1fr auto auto;
   grid-gap: 0;
-  box-shadow: 1px 2px 2px rgb(228, 228, 228);
+  box-shadow: 1px 2px 2px 2px rgb(228, 228, 228);
   transition: all 0.1s ease;
 }
 
@@ -635,16 +621,16 @@ footer {
   color: #888;
 }
 
-footer i {
+.footer-bottom-info {
+  font-size: 0.8em;
+  margin-top: 40px;
+}
+
+.footer-bottom-info i {
   font-size: 0.85em;
   color: red;
   text-align: center;
   margin: 0 3px;
-}
-
-.footer-bottom-info {
-  font-size: 0.8em;
-  margin-top: 40px;
 }
 
 .footer-navbar,
@@ -678,14 +664,14 @@ footer i {
 }
 
 .footer-navbar a {
-  padding: 10px;
+  padding: 7px;
 }
 
-.footer-navbar a:first-child {
+.footer-navbar li:first-child a {
   padding-left: 0;
 }
 
-.footer-navbar a:nth-last-child() {
+.footer-navbar li:last-child a {
   padding-right: 0;
 }
 
